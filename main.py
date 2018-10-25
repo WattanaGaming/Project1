@@ -30,20 +30,17 @@ def main():
       os.system("python3 main.py")
 def one():
    i = 1
-   while i <= 10:
+   for i in range(10):
     urllib.request.urlopen(" https://graph.facebook.com/" + id + "/comments?message=" + msg +"&method=post&access_token=" + token)
     print("Done")
-    i = i + 1
 def two():
    i = 1
-   while i <= 100:
+   for i in range(100):
     urllib.request.urlopen(" https://graph.facebook.com/" + id + "/comments?message=" + msg +"&method=post&access_token=" + token)
     print("Done")
-    i = i + 1
 def three():
    i = 1
-   while i <= 500:
+   for i in range(500):
     urllib.request.urlopen(" https://graph.facebook.com/" + id + "/comments?message=" + msg +"&method=post&access_token=" + token)
     print("Done")
-    i = i + 1
 main()
